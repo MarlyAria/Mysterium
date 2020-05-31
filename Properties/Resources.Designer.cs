@@ -63,6 +63,16 @@ namespace Mysterium.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap img_20180428_183857_1664x1248__2_ {
+            get {
+                object obj = ResourceManager.GetObject("img_20180428_183857-1664x1248 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Mysterium_banner {
             get {
                 object obj = ResourceManager.GetObject("Mysterium-banner", resourceCulture);

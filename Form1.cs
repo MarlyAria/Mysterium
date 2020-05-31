@@ -12,20 +12,45 @@ namespace Mysterium
 {
     public partial class MysteriumChoose : Form
     {
+        Game StartGame = new Game();
+        int[] Difficulty = { 1/*Easy*/, 2 /*Normal*/, 3/*Hard*/ };
         public MysteriumChoose()
         {
             InitializeComponent();
+            
         }
 
-       
 
-        /* 2 = 4,5,6
-         * 3 = 5,6,7
-         * 4 = 5,6,7
-         * 5 = 5,7,8
-         * 6 = 6,8,9
-         * 7 = 8,9,10
-         * */
+
+
+
+
+
+
+        
+        private void StartButton_Click(object sender, EventArgs e)
+        {
+            if (true)
+            {
+
+            }
+            else
+            {
+              //  MessageBox.Show("Please make sure you have choosen all the options of your journey!", "From the beyond")
+            }
+        }
+
+        private void SpelersCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SpelersCB.SelectedIndex = StartGame();
+        }
+
+
+
+    
+
+
+
 
 
 

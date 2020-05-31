@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Mysterium
 {
     class Cards
     {
-        Random rnd = new Random();
-        
-        string[] CharacterArray = new string[]
-            {   
+        public string[] CharacterArray = new string[]
+                       {   
                 //array 0 t/m 17
                 "1", "2","3", "4","5", "6", "7", "8", "9", "10",
                 "11", "12", "13", "14", "15", "16", "17", "18",
@@ -21,7 +20,7 @@ namespace Mysterium
                 "SL1", "SL2", "SL3", "SL4", "SL5", "SL6", 
                 //array 30
                 "P1"
-            };
+                       };
 
         string[] LocationArray = new string[]
             {   
@@ -58,9 +57,5 @@ namespace Mysterium
                 // array 18 en 19
                 "P5", "P6"
             };
-
-        
-
-        //comentaar test
     }
 }
