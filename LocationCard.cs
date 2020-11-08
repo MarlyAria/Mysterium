@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mysterium
 {
-    enum Location
+    enum LocationCard
     {
         nineteen = 1,
         twenty,//2

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mysterium
 {
-    enum Character
+    enum CharacterCard
     {
         one = 1,//1
         two, //2

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mysterium
 {
-    enum Story
+    enum StoryCard
     {
         // Story cards for the Secret and Lies expansions
         SL19 =1,

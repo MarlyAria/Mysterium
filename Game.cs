@@ -8,15 +8,21 @@ using System.Windows.Forms;
 
 namespace Mysterium
 {
-    class Game : Cards, ICardDraw, IStory
+    class Game
     {
+        public int Difficulty { get; set; }
+        public int Player { get; set; }
 
+        
+        
+        public Game (int difficulty, int player)
+        {
+            this.Difficulty = difficulty;
+            this.Player = player;
+        }
 
-        Random r = new Random();
-        int Difficulty;
-        int Psychics;
-        int CharacterArrayCards;
-
+        
+        
 
 
 
@@ -43,73 +49,7 @@ solution.shuffle();
  */
 
 
-        public void DrawCharacter()
-        {
-          
-            //easy game
-            if (Difficulty == 0)
-            {
-                //code voor de kaarten trekken
-                CharacterArray = CharacterArray.OrderBy(x => r.Next()).ToArray();
-                if (Psychics == 1)
-                {
-                    for (int i = 3; i < CharacterArray.Length; i++)
-                    {
-                        Console.WriteLine(CharacterArray[i]);
-                    }
-                }
-                if (Psychics == 2)
-                {
-                    for (int i = 4; i < CharacterArray.Length; i++)
-                    {
-                        Console.WriteLine(CharacterArray[i]);
-                    };
-                }
-                if (Psychics == 3)
-                {
-                    for (int i = 5; i < CharacterArray.Length; i++)
-                    {
-                        Console.WriteLine(CharacterArray[i]);
-                    };
-                }
-                if (Psychics == 4)
-                {
-                    for (int i = 6; i < CharacterArray.Length; i++)
-                    {
-                        Console.WriteLine(CharacterArray[i]);
-                    };
-                }
-                if (Psychics == 5)
-                {
-                    for (int i = 7; i < CharacterArray.Length; i++)
-                    {
-                        Console.WriteLine(CharacterArray[i]);
-                    };
-                }
-                if (Psychics == 6)
-                {
-                    for (int i = 8; i < CharacterArray.Length; i++)
-                    {
-                        Console.WriteLine(CharacterArray[i]);
-                    }; ;
-                }
-            }
-
-        }
-
-        public void DrawLocation()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void DrawChoice()
-        {
-            throw new NotImplementedException();
-        }
-
-        void IStory.DrawChoise()
-        {
-            throw new NotImplementedException();
-        }
+        
+       
     }
 }

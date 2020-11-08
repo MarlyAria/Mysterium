@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mysterium
 {
-    enum Object
+    enum ObjectCard
     {
         //cards for the objects
         thirtyseven = 1,

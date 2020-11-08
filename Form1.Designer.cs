@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SpelersCB = new System.Windows.Forms.ComboBox();
+            this.PlayerCB = new System.Windows.Forms.ComboBox();
             this.labelPhychics = new System.Windows.Forms.Label();
             this.labelGhostState = new System.Windows.Forms.Label();
             this.GhostStateCB = new System.Windows.Forms.ComboBox();
@@ -46,24 +46,24 @@
             this.StartButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // SpelersCB
+            // PlayerCB
             // 
-            this.SpelersCB.AllowDrop = true;
-            this.SpelersCB.Font = new System.Drawing.Font("Ravie", 11F, System.Drawing.FontStyle.Italic);
-            this.SpelersCB.FormattingEnabled = true;
-            this.SpelersCB.Items.AddRange(new object[] {
+            this.PlayerCB.AllowDrop = true;
+            this.PlayerCB.Font = new System.Drawing.Font("Ravie", 11F, System.Drawing.FontStyle.Italic);
+            this.PlayerCB.FormattingEnabled = true;
+            this.PlayerCB.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
             "4",
             "5",
             "6"});
-            this.SpelersCB.Location = new System.Drawing.Point(732, 353);
-            this.SpelersCB.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.SpelersCB.Name = "SpelersCB";
-            this.SpelersCB.Size = new System.Drawing.Size(143, 32);
-            this.SpelersCB.TabIndex = 0;
-            this.SpelersCB.SelectedIndexChanged += new System.EventHandler(this.SpelersCB_SelectedIndexChanged);
+            this.PlayerCB.Location = new System.Drawing.Point(732, 353);
+            this.PlayerCB.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.PlayerCB.Name = "PlayerCB";
+            this.PlayerCB.Size = new System.Drawing.Size(143, 32);
+            this.PlayerCB.TabIndex = 0;
+            this.PlayerCB.SelectedIndexChanged += new System.EventHandler(this.PlayerCB_SelectedIndexChanged);
             // 
             // labelPhychics
             // 
@@ -106,6 +106,7 @@
             this.GhostStateCB.Name = "GhostStateCB";
             this.GhostStateCB.Size = new System.Drawing.Size(701, 32);
             this.GhostStateCB.TabIndex = 3;
+            this.GhostStateCB.SelectedIndexChanged += new System.EventHandler(this.GhostStateCB_SelectedIndexChanged);
             // 
             // checkBoxSecretLies
             // 
@@ -119,6 +120,7 @@
             this.checkBoxSecretLies.TabIndex = 4;
             this.checkBoxSecretLies.Text = "Secrets and Lies";
             this.checkBoxSecretLies.UseVisualStyleBackColor = false;
+            this.checkBoxSecretLies.CheckedChanged += new System.EventHandler(this.checkBoxSecretLies_CheckedChanged);
             // 
             // checkBoxHiddenSigns
             // 
@@ -132,6 +134,7 @@
             this.checkBoxHiddenSigns.TabIndex = 5;
             this.checkBoxHiddenSigns.Text = "Hidden Signs";
             this.checkBoxHiddenSigns.UseVisualStyleBackColor = false;
+            this.checkBoxHiddenSigns.CheckedChanged += new System.EventHandler(this.checkBoxHiddenSigns_CheckedChanged);
             // 
             // Promo1CB
             // 
@@ -232,7 +235,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "The murder object",
             "The story of how the ghost got killed"});
-            this.comboBox1.Location = new System.Drawing.Point(732, 438);
+            this.comboBox1.Location = new System.Drawing.Point(732, 449);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(649, 32);
@@ -291,7 +294,7 @@
             this.Controls.Add(this.GhostStateCB);
             this.Controls.Add(this.labelGhostState);
             this.Controls.Add(this.labelPhychics);
-            this.Controls.Add(this.SpelersCB);
+            this.Controls.Add(this.PlayerCB);
             this.Font = new System.Drawing.Font("Ravie", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
@@ -305,8 +308,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox SpelersCB;
         private System.Windows.Forms.Label labelPhychics;
         private System.Windows.Forms.Label labelGhostState;
         private System.Windows.Forms.ComboBox GhostStateCB;
@@ -322,6 +323,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label LabelExpensions;
         private System.Windows.Forms.Button StartButton;
+        private System.Windows.Forms.ComboBox PlayerCB;
     }
 }
 
